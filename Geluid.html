@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testpagina</title>
+</head>
+<body>
+    <h1>Hallo, welkom bij de testpagina!</h1>
+    <p>Klik op de knop hieronder om geluid af te spelen:</p>
+    <button onclick="playSound()">KLIK HIER</button>
+
+    <!-- Hieronder voegen we een audio-element toe voor het geluid -->
+    <audio id="myAudio">
+        <source src="geluid.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playSound() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
